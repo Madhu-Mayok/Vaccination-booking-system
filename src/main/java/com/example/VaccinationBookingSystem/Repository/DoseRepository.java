@@ -1,10 +1,9 @@
 package com.example.VaccinationBookingSystem.Repository;
 
+import com.example.VaccinationBookingSystem.Model.Dose;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.VaccinationBookingSystem.Model.Person;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PersonRepository extends JpaRepository<Person,Integer> {
-    Person findByEmailId(String oldEmail);
+public interface DoseRepository extends JpaRepository<Dose,Integer> {
 }
